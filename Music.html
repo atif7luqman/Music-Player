@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </nav>
+            <img src="thumbnail.jpeg" alt="" class="song-img">
+            <h1>Anynomous</h1>
+            <p>faslo ko takalaf hy hum sy agar</p>
+            <audio id="song" >
+                <source src="faslo-ko-takalaf-hy.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">        
+                <div onclick="reverse()"><i class="fa fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa fa-pause" id="ctrlIcon" ></i></div>
+                <div onclick="forward()"><i class="fa fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
